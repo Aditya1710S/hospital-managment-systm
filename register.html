@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Hospital Management</title>
+
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to right, #9ea1a5, #cdd5d7);
+        }
+
+        /* Auth Container */
+        .auth-container {
+            width: 400px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .auth-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Input Fields */
+        .auth-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Buttons */
+        .auth-container button {
+            width: 100%;
+            padding: 10px;
+            background: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .auth-container button:hover {
+            background: #357ab8;
+        }
+
+        /* Switch Links */
+        .switch-auth {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .switch-auth a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .switch-auth a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="auth-container">
+        <h2>Register</h2>
+
+        <input type="text" id="registerName" placeholder="Full Name" required>
+        <input type="number" id="registerAge" placeholder="Age" required>
+        <input type="tel" id="registerPhone" placeholder="Phone Number" required>
+        <input type="email" id="registerEmail" placeholder="Email" required>
+        <input type="password" id="registerPassword" placeholder="Password" required>
+
+        <button onclick="registerUser()">Register</button>
+
+        <p class="switch-auth">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

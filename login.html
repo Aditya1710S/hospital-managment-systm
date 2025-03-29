@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hospital Management</title>
+
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to right, #7d8895, #c8cfd2);
+        }
+
+        /* Auth Container */
+        .auth-container {
+            width: 380px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .auth-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Input Fields */
+        .auth-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Buttons */
+        .auth-container button {
+            width: 100%;
+            padding: 10px;
+            background: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .auth-container button:hover {
+            background: #357ab8;
+        }
+
+        /* Forgot Password */
+        .forgot-password {
+            display: block;
+            margin: 10px 0;
+            color: #4a90e2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        /* Switch Links */
+        .switch-auth {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .switch-auth a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .switch-auth a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="auth-container">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+
+        <a href="forgot-password.html" class="forgot-password">Forgot Password?</a>
+
+        <button onclick="loginUser()">Login</button>
+
+        <p class="switch-auth">Don't have an account? <a href="register.html">Register</a></p>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

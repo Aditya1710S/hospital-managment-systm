@@ -1,0 +1,441 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2C3E50;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: #ECF0F1;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+}
+
+.hero-text span {
+    color: #3498DB;
+}
+
+.hero-text button {
+    background: #3498DB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-text button:hover {
+    background: #2980B9;
+}
+
+.hero-image img {
+    width: 400px;
+    /* Set a width for the image */
+    border-radius: 10px;
+}
+
+/* Authentication Box */
+.auth-container {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+    text-align: center;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.auth-box input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-box button {
+    background: #2C3E50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.auth-box button:hover {
+    background: #1A252F;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Appointment Section Styling */
+.appointment-section {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.appointment-section h2 {
+    color: #2C3E50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+<style>
+/* Contact Section Styling */
+#contact {
+    background: #d4d8de; /* Dark background */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    background: #82808e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.contact-card:hover {
+    background: #0a66c2; /* Change color on hover */
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact-card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+#contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+#contact-form button {
+    background: #55789b;
+    color: rgb(117, 66, 66);
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#contact-form button:hover {
+    background: #1b416b;
+    transform: scale(1.05);
+}
+
+
+/* Doctors Section */
+.doctors-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #F8F9FA;
+    position: relative;
+}
+
+/* Title Styling */
+.doctors-section h2 {
+    font-size: 28px;
+    color: #2C3E50;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: inline-block;
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Centering title above cards */
+.doctors-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    /* Moves cards slightly up */
+}
+
+/* Doctors Section */
+.doctors-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #1C1C1C;
+    /* Dark theme */
+}
+
+.doctors-title {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    /* Title ko center align */
+}
+
+.doctors-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Doctor Card */
+.doctor-card {
+    background: black;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.doctor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #3498DB;
+    margin-bottom: 10px;
+}
+
+.doctor-card h3 {
+    color: white;
+    margin: 0;
+    font-size: 20px;
+}
+
+.doctor-card p {
+    color: #CCCCCC;
+    font-size: 14px;
+}
+
+
+/* Services Section */
+.services-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #F8F9FA;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Services Container */
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Service Card */
+.service-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-left: 4px solid #3498DB;
+}
+
+.service-info {
+    padding: 15px;
+}
+
+.service-info h3 {
+    margin: 0;
+    color: #2C3E50;
+    font-size: 20px;
+}
+
+.service-info p {
+    margin: 5px 0
+

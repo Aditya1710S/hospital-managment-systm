@@ -1,1 +1,2 @@
-# hospital-managment-systm
+# hospital-management-bhushan
+Project-Hospital-MAnagement

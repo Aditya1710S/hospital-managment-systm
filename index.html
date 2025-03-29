@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">HEALTH+</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="service.html">Services</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" id="authLink" onclick="handleAuthClick()">Login/Register</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Your Partner in <br> <span>Health and Wellness</span></h1>
+            <p>Providing the best medical and healthcare services to help you live healthier and happier.</p>
+            <button id="bookAppointmentBtn">BOOK AN APPOINTMENT</button>
+        </div>
+        <div class="hero-image">
+            <img src="doctor.png" alt="Doctors">
+        </div>
+    </section>
+
+
+    <!-- 🔑 Authentication Modal (Only Login/Register) -->
+    <div id="authContainer" class="auth-container">
+        <div class="auth-box">
+            <h2>Select Option</h2>
+            <button onclick="redirectTo('login.html')">Login</button>
+            <button onclick="redirectTo('register.html')">Register</button>
+            <button onclick="closeAuthModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors-section">
+        <h2 class="doctors-title">Meet Our Professional Doctors</h2>
+        <p class="section-subtitle">World's Top Doctors Are Here</p>
+
+        <div class="doctors-container">
+            <div class="doctor-card">
+                <img src="doctor1.jpg" alt="Dr. Emilia Doe">
+                <h3>Dr. Nita Sharma</h3>
+                <p>Cardiologist</p>
+            </div>
+            <div class="doctor-card">
+                <img src="doctor2.jpg" alt="Dr. Jane Smith">
+                <h3>Dr. Lalit</h3>
+                <p>Neurologist</p>
+            </div>
+            <div class="doctor-card">
+                <img src="doctor3.jpg" alt="Dr. Alex Brown">
+                <h3>Dr. Bhaskar</h3>
+                <p>Orthopedic Surgeon</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2 class="section-title">Our Healthcare Services</h2>
+        <p class="section-subtitle">We provide world-class medical services with expert care.</p>
+
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-info">
+                    <h3>Cardiology</h3>
+                    <p>Heart care and advanced treatments.</p>
+                </div>
+                <img src="service1.jpg" alt="Cardiology">
+            </div>
+
+            <div class="service-card">
+                <div class="service-info">
+                    <h3>Neurology</h3>
+                    <p>Brain & nerve health solutions.</p>
+                </div>
+                <img src="service2.jpg" alt="Neurology">
+            </div>
+
+            <div class="service-card">
+                <div class="service-info">
+                    <h3>Orthopedics</h3>
+                    <p>Bone & joint treatment by experts.</p>
+                </div>
+                <img src="service3.jpg" alt="Orthopedics">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us for any queries or appointments.</p>
+    
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>123 Health Street, City, Country</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone No</h3>
+                    <p>+0 258 422 369</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>health11@hospital.com</p>
+                </div>
+            </div>
+    
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <script type="module" src="script.js"></script>
+    <script>
+        function openAuthModal() {
+            document.getElementById('authContainer').style.display = 'flex';
+        }
+
+        function closeAuthModal() {
+            document.getElementById('authContainer').style.display = 'none';
+        }
+
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+
+</html>

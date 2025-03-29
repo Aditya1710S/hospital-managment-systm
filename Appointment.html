@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">HEALTH+</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" id="authLink" style="color: blue;">LOGGED IN</a></li>
+        </ul>
+    </nav>
+
+    <!-- Appointment Booking Section -->
+    <section class="appointment-section">
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="patientName">Full Name</label>
+                    <input type="text" id="patientName" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="patientEmail">Email</label>
+                    <input type="email" id="patientEmail" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="doctor">Select Doctor</label>
+                    <select id="doctor" required>
+                        <option value="">-- Choose a Doctor --</option>
+                        <option value="Dr. Nita Sharma">Dr. Nita Sharma - Cardiologist</option>
+                        <option value="Dr. Lalit">Dr. Lalit - Dermatologist</option>
+                        <option value="Dr. Bhaskar">Dr. Bhaskar - Orthopedic</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointmentDate">Select Date</label>
+                    <input type="date" id="appointmentDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointmentTime">Select Time</label>
+                    <input type="time" id="appointmentTime" required>
+                </div>
+
+                <button type="submit">Confirm Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="appointment.js"></script>
+</body>
+</html>
